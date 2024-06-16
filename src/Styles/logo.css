@@ -1,0 +1,77 @@
+.Logo{
+    background-Color:#757dee;
+    
+    width:fit-Content;
+    height: fit-content;
+    padding: 10px;  
+    border-radius:10px;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.Navbar{
+    height:50px;
+    background-color: var(--primary_dark);
+    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 10px 3px 10px;
+    
+    
+        
+}
+
+
+.Option{
+    
+    background-color:var(--primary_dark);
+    color: #96bdf8d8;
+    border: 2px solid #96bdf8d8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: outline 0.2s;
+    margin-left: auto;
+    
+}
+.Option:focus{
+    outline: none;
+    
+}
+
+.Setting,.Reload,.Range{
+    font-size: 30px;
+    margin-left: 10px;
+    color: var(--secondary_dark);
+}
+.Range{
+    width:100px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 2px solid var(--secondary_dark);
+    margin-left: auto;
+}
+.Range:focus{
+    outline: 0px;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+::selection{
+    background-color: var(--secondary_dark);
+    color: var(--primary_dark)    ;
+}

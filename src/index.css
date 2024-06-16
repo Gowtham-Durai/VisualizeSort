@@ -1,0 +1,67 @@
+@import url("./Styles/Colors.css");
+
+body,html,#root{
+  padding:0px;
+  margin:0;
+  width: 100vw;
+  height: 100vh; 
+   background-color: var(--primary_dark_BG);
+  font-family: Inter,Arial, Helvetica, sans-serif;
+  
+  
+}
+
+*:not(div){
+  overflow: hidden;
+}
+
+
+.Container{
+  flex-grow: 1;
+  /* padding: 10px 40px 10px 40px; */
+  margin: auto;
+  background-color: var(--primary_dark);
+  border-radius: 10px;
+  width:95%;
+  height: 65vh;
+  
+  
+  display:inline-flex;
+    
+  justify-content:center;
+  align-items: center;
+  gap: 6px;
+  transition:all ease-in 0.7s;
+  
+}
+.Popup{
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  background-color: var(--primary_dark);
+  padding: 20px;
+  border-radius: 10px;
+  color:var(--secondary_dark);
+  text-align: right;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  border: 2px solid var(--secondary_dark);
+  /* visibility: hidden; */
+  animation: opacity 1s;
+}
+@keyframes opacity{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.Popup label{
+  
+  align-content: center;
+}
+.Popup .Option{
+  margin: auto;
+width: fit-content;
+padding: 5px;
+}
+

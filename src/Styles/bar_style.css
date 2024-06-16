@@ -1,0 +1,96 @@
+:root{
+    
+    --smooth:0s;
+    /* --bar_height:300; */
+    --bar-width:10;
+}
+
+.Bar { 
+    width: calc(var(--bar-width) *1px); 
+    height: calc(var(--bar_height)*1px);
+    position: relative; 
+    transform-style: preserve-3d; 
+    transform: rotateX(-20deg) rotateY(-30deg); 
+    transition: height 1s;
+ 
+} 
+ 
+.side { 
+    position: absolute; 
+    width:  calc(var(--bar-width) *1px); 
+    height: calc(var(--bar_height)*1px);
+    
+    
+    
+} 
+ 
+.right { 
+    transform-origin: right; 
+    transform: rotateY(-90deg); 
+    background-color: #9b9b9b60; 
+} 
+ 
+.left { 
+    transform-origin: left; 
+    transform: rotateY(90deg); 
+    background-color: #c7c7c7ab; 
+} 
+
+
+ .color-front{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--bar-width) *1px);
+    transition: height var(--smooth) ease-in-out , background-color var(--smooth);
+    
+  white-space: nowrap; /* Prevent text from wrapping */ 
+  overflow: hidden; /* Hide any overflowing text */ 
+  text-overflow:clip; 
+    
+ }
+ .color-right{
+    position: absolute;
+    bottom: 0;
+    width:  calc(var(--bar-width) *1px);
+    transition: height var(--smooth) ease-in-out, background-color var(--smooth);
+    
+ }
+ .color-top{
+    position: absolute;
+    width: calc(var(--bar-width) *1px); 
+    height: calc(var(--bar-width) *1px); 
+    transform-origin: top; 
+    transform: rotateX(-90deg); 
+
+    transition: top var(--smooth) ease-in-out, background-color var(--smooth);
+ }
+.bottom { 
+    width:  calc(var(--bar-width) *1px); 
+    height:  calc(var(--bar-width) *1px); 
+    
+    transform-origin: top; 
+    transform: translateY(calc(var(--bar_height)*1px)) rotateX(-90deg); 
+    background-color: rgb(169, 169, 169); 
+} 
+ 
+.top { 
+    width: calc(var(--bar-width) *1px); 
+    height: calc(var(--bar-width) *1px); 
+    
+    transform-origin: top; 
+    transform: rotateX(-90deg); 
+    background-color: rgba(189, 189, 189, 0.619); 
+} 
+ 
+.back{
+    transform-origin: right; 
+    transform: translateZ(calc(-1 * calc(var(--bar-width) *1px))); 
+    background-color: rgb(198, 198, 198); 
+}
+.front{
+    background-color: rgba(136, 136, 136, 0.563);
+}
